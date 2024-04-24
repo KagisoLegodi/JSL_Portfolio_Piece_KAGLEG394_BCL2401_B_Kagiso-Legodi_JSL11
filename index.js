@@ -149,14 +149,14 @@ function addTaskToUI(task) {
       `Tasks container not found for status: ${task.status}, creating one.`
     );
     tasksContainer = document.createElement("div");
-    tasksContainer.className = 'tasks-container';
+    tasksContainer.className = "tasks-container";
     column.appendChild(tasksContainer);
   }
 
-  const taskElement = document.createElement('div');
-  taskElement.className = 'task-div'; // change class name OR task-div
+  const taskElement = document.createElement("div");
+  taskElement.className = "task-div"; // change class name OR task-div
   taskElement.textContent = task.title; // Modify as needed
-  taskElement.setAttribute('data-task-id', task.id);
+  taskElement.setAttribute("data-task-id", task.id);
 
   tasksContainer.appendChild(taskElement);
 }
@@ -316,9 +316,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function init() {
   setupEventListeners();
-  const showSidebar = localStorage.getItem('showSideBar') === 'true';
+  const showSidebar = localStorage.getItem("showSideBar") === "true";
   toggleSidebar(showSidebar);
-  const isLightTheme = localStorage.getItem('light-theme') === 'enabled';
-  document.body.classList.toggle('light-theme', isLightTheme);
+  const isLightTheme = localStorage.getItem("light-theme") === "enabled";
+  document.body.classList.toggle("light-theme", isLightTheme);
   fetchAndDisplayBoardsAndTasks(); // Initial display of boards and tasks
 }
