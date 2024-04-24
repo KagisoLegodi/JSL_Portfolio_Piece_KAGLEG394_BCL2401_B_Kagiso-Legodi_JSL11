@@ -26,6 +26,7 @@ const elements = {
   themeSwitch: document.getElementById('switch'),
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   modalWindow: document.querySelector('.modal-window'),
+  editTaskModal: document.querySelector('.edit-task-modal-window')
 }
 
 let activeBoard = ""
