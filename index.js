@@ -21,6 +21,7 @@ const elements = {
   headerBoardName : document.getElementById('header-board-name'),
   columnDivs: document.querySelectorAll('.column-div'),
   filterDiv: document.getElementById('filterDiv'),
+  hideSideBarBtn: document.getElementById('hide-side-bar-btn'),
 }
 
 let activeBoard = ""
