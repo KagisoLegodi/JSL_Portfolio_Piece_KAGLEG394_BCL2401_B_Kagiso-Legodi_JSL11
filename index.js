@@ -143,7 +143,7 @@ function addTaskToUI(task) {
   }
 
   const taskElement = document.createElement('div');
-  taskElement.className = 'task-div';
+  taskElement.className = 'task-div'; // changetask-div OR class name 
   taskElement.textContent = task.title; // Modify as needed
   taskElement.setAttribute('data-task-id', task.id);
   
@@ -155,7 +155,7 @@ function addTaskToUI(task) {
 function setupEventListeners() {
   // Cancel editing task event listener
   const cancelEditBtn = document.getElementById('cancel-edit-btn');
-  cancelEditBtn.click() => toggleModal(false, elements.editTaskModal));
+  cancelEditBtn.addEventListener(click ,() => {toggleModal(false, elements.editTaskModal)});
 
   // Cancel adding new task event listener
   const cancelAddTaskBtn = document.getElementById('cancel-add-task-btn');
