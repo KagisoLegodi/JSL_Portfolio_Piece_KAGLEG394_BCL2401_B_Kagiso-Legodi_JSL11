@@ -95,6 +95,7 @@ function filterAndDisplayTasksByBoard(boardName) {
                         </div>`;
 
     const tasksContainer = document.createElement("div");
+    tasksContainer.className = "tasks-container"; // Add class name
     column.appendChild(tasksContainer);
 
     filteredTasks
