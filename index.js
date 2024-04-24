@@ -257,8 +257,11 @@ function openEditTaskModal(task) {
   // Get button elements from the task modal
  const saveTaskChangesBtn = document.getElementById('save-task-changes-btn');
 
-
   // Call saveTaskChanges upon click of Save Changes button
+  saveTaskChangesBtn.addEventListener('click', () => {
+    saveTaskChanges(task.id);
+    toggleModal(false, elements.modalWindow);
+  })
 
   // Delete task using a helper function and close the task modal
 
