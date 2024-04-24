@@ -19,7 +19,7 @@ function initializeData() {
 // TASK: Get elements from the DOM
 const elements = {
   headerBoardName : document.getElementById('header-board-name'),
-
+  columnDivs: document.querySelectorAll('.column-div'),
 }
 
 let activeBoard = ""
