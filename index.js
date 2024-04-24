@@ -224,6 +224,13 @@ function addTask(event) {
 
 
 function toggleSidebar(show) {
+  const sidebar = document.gedtElementById('side-bar-div');
+  if (show){
+    sidebar.style.dispay = 'block'; // show the side bar
+    elements.showSideBarBtn.style.display = 'none'; //hide the side bar button
+  } else{
+    sidebar.style.display = 'block'; // hide the sidebar button
+  }
  
 }
 
